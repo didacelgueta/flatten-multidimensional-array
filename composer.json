@@ -1,0 +1,26 @@
+{
+    "name": "didacelgueta/flatten-multidimensional-array",
+    "description": "Reduce the dimensionality of a given array into a one dimension array",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Didac Elgueta",
+            "email": "didac.elgueta@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Didacelgueta\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Didacelgueta\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
+    }
+}
