@@ -7,7 +7,7 @@ Convert multidimensional array to unidimensional array concatenating the keys
 Via [composer](http://getcomposer.org):
 
 ```shell
-composer require rogervila/array-diff-multidimensional
+composer require didacelgueta/flatten-multidimensional-array
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ var_dump($result);
 The result will return a new array with just one dimension:
 ```php
 [
-	'a' => 1,
+    'a' => 1,
     'b_c' => 2,
     'b_d' => 3
 ]
