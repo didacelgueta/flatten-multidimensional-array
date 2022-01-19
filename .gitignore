@@ -2,3 +2,4 @@
 composer.lock
 *.cache
 junit-logfile.xml
+*.bak

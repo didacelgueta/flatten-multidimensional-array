@@ -17,6 +17,18 @@ class FlattenMultidimensionalArray
 
     public static function array_flatten($arg, $key_sep = '.', $key_input = '')
     {
+        if (!is_array($arg)) {
+            throw new \InvalidArgumentException('$arg must be an array!');
+        }
+
+        if (!is_string($key_sep)) {
+            throw new \InvalidArgumentException('$key_sep must be a string!');
+        }
+
+        if (!is_string($key_input)) {
+            throw new \InvalidArgumentException('$key_sep must be a string!');
+        }
+
         $result = array();
 
         foreach ($arg as $key => $value) {
