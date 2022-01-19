@@ -29,8 +29,8 @@ The result will return a new array with just one dimension:
 ```php
 [
     'a' => 1,
-    'b_c' => 2,
-    'b_d' => 3
+    'b.c' => 2,
+    'b.d' => 3
 ]
 ```
 
