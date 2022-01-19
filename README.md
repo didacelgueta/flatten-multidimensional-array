@@ -35,7 +35,7 @@ The result will return a new array with just one dimension:
 ```
 ## Set specific key separator
 
-By default the key separator is '.', but you can specify the key separator you prefere by passing a string as the second parameter for `array_flatten` method
+By default the key separator is **'.'** but you can specify the key separator you prefere by passing a string as the second parameter for `array_flatten` method
 ```php
 $arg = array(
     'a' => 1,
@@ -50,7 +50,7 @@ $result = FlattenMultidimensionalArray::array_flatten($arg, '_');
 var_dump($result);
 ```
 
-The result will return the one dimension array with the keys nested by '_':
+The result will return the one dimension array with the keys nested by **'_'**
 ```php
 [
     'a' => 1,
