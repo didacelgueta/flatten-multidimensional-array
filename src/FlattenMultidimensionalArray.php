@@ -41,7 +41,7 @@ class FlattenMultidimensionalArray
             if (is_array($value) && count($value) > 0) {
                 $result = array_merge($result, self::array_flatten($value, $key_sep, $key_custom));
             } else {
-                array_push($result, array($key_custom => $value));
+                $result[$key_custom] = $value;
             }
         }
 

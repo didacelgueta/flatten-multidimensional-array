@@ -13,7 +13,7 @@ class RemoveDimensionalityTest extends TestCase
 
         $result = FlattenMultidimensionalArray::array_flatten($arg);
 
-        $this->assertEquals($result, [['a' => 1], ['b' => 2]]);
+        $this->assertEquals($result, ['a' => 1, 'b' => 2]);
     }
 
     public function test_reduce_two_dimensional_array_into_one_dimension()
@@ -30,9 +30,9 @@ class RemoveDimensionalityTest extends TestCase
         $this->assertEquals(
             $result,
             [
-                ['a' => 1],
-                ['b.c' => 2],
-                ['b.d' => 3]
+                'a' => 1,
+                'b.c' => 2,
+                'b.d' => 3
             ]
         );
     }
@@ -54,10 +54,10 @@ class RemoveDimensionalityTest extends TestCase
         $this->assertEquals(
             $result,
             [
-                ['a' => 1],
-                ['b.c' => 2],
-                ['b.d.e' => 3],
-                ['b.d.f' => 4]
+                'a' => 1,
+                'b.c' => 2,
+                'b.d.e' => 3,
+                'b.d.f' => 4
             ]
         );
     }
@@ -96,9 +96,9 @@ class RemoveDimensionalityTest extends TestCase
         $this->assertEquals(
             $result,
             [
-                ['a' => 1],
-                ['b%c' => 2],
-                ['b%d' => 3]
+                'a' => 1,
+                'b%c' => 2,
+                'b%d' => 3
             ]
         );
     }
